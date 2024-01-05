@@ -21,10 +21,6 @@ const ProductsList = () => {
         <div className='container'>
             <h1 className='text-center mt-2'>Products List</h1>
 
-            {/* <div className='d-flex form-group-inline'>
-                <input type='text' className='form-control' placeholder='Search'/>
-                <button type='button' className='btn btn-primary'>Search</button>
-            </div> */}
             <div className="container d-flex justify-content-center mt-50 mb-50">
                 <div className="row">
                     {productList.map((product) => (

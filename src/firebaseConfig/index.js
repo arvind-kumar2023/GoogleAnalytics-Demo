@@ -29,7 +29,6 @@ const firebaseConfig1 = {
 // Initialize the Firebase app using the configuration object
 
 export const app1 = initializeApp(firebaseConfig1, "GoogleAnalytics");
-// export const app2 = initializeApp(firebaseConfig2, "project2");
 
 // Get the authentication instance using the initialized Firebase app
 export const analytics = getAnalytics(app1);
