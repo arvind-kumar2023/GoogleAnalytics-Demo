@@ -10,7 +10,7 @@ const Navbars =()=>{
           <Navbar.Brand href="/">Google Analytics</Navbar.Brand>
           <Nav className="me-auto">
             <Nav.Link href="/">Home</Nav.Link>
-            <Nav.Link href="/about">About Us</Nav.Link>
+            <Nav.Link href="/products">Products</Nav.Link>
           </Nav>
         </Container>
       </Navbar>

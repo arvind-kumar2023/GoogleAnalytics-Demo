@@ -34,8 +34,31 @@ export const app1 = initializeApp(firebaseConfig1, "GoogleAnalytics");
 // Get the authentication instance using the initialized Firebase app
 export const analytics = getAnalytics(app1);
 
+// Page View Google Analytics Tag Event
 export const analyticsEvent = (title) => {
   logEvent(analytics, "page_view", {
     page_title: title,
   });
 };
+
+//  Add To Card Google Analytics Tag Event
+export const addToCard = (item) => {
+  logEvent(analytics, 'add_to_cart', {
+    item_id: item.id,
+    item_name: item.title,
+    price: item.price,
+    currency: "INR",
+    quantity: 1,
+  })
+}
+
+// View Items Google Analytics Tag Event
+export const viewItem = (item) => {
+  logEvent(analytics, 'view_item', {
+    item_id: item.id,
+    item_name: item.title,
+    price: item.price,
+    currency: "INR",
+    value: item.price,
+  })
+}
